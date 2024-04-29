@@ -25,4 +25,5 @@ def mission_two(r):
     print("Running Mission 2")
     r.ev3.screen.draw_text(30, 60, "Mission 2")
     wait(100)
-    # Add your code below:
+    # L
+

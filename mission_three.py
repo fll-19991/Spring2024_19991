@@ -25,4 +25,4 @@ def mission_three(r):
     print("Running Mission 3")
     r.ev3.screen.draw_text(30, 60, "Mission 3")
     wait(100)
-    # Add your code below:
+    # 

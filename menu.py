@@ -118,4 +118,3 @@ def menu(r):
                     wait(500)
                 else:
                     print("UNDEFINED BUTTON ERROR!")
-

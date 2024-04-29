@@ -25,6 +25,19 @@ def mission_one(r):
     print("Running Mission 1")
     r.ev3.screen.draw_text(30, 60, "Mission 1")
     wait(100)
+    # Emily's Program
+    # Mission 6 Music Concert & Mission 7 Hologram Performer
     # Add your code below:
-    r.robot.straight(100)
-    r.robot.turn(90)
+    r.robot.drive(300,-5)
+    wait(2900)
+    r.robot.stop()
+    r.robot.drive(-330, 42.5)
+    wait(1500)
+    r.robot.stop()
+    r.robot.straight(400)
+    r.robot.straight(-200)
+    r.robot.drive(150, -30)
+    wait(500)
+    r.robot.stop()
+    r.left_attachment_motor.run_time(150, 2000)
+    r.left_attachment_motor.run_time(-50, 250)

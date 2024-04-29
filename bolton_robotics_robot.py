@@ -82,7 +82,7 @@ class bolton_robotics_robot:
             self.ev3.screen.clear()
             sys.exit()
         try:
-            self.left_drive_motor = Motor(Port.B)
+           self.left_drive_motor = Motor(Port.B)
         except: 
             self.ev3.screen.clear()
             self.ev3.light.off()
@@ -129,18 +129,18 @@ class bolton_robotics_robot:
             wait(4000)
             self.ev3.screen.clear()
             sys.exit()
-        try:
-            self.right_color_sensor = ColorSensor(Port.S4)
-        except: 
-            self.ev3.screen.clear()
-            self.ev3.light.off()
-            self.ev3.light.on(Color.RED)
-            self.ev3.screen.draw_text(0,40,"STARTUP ERROR")
-            self.ev3.screen.draw_text(0,80,"CHECK PORT 4")
-            self.ev3.speaker.beep(frequency=2000, duration=1000)
-            wait(4000)
-            self.ev3.screen.clear()
-            sys.exit()
+       # try:
+          #  self.right_color_sensor = ColorSensor(Port.S4)
+       # except: 
+        #    self.ev3.screen.clear()
+         #   self.ev3.light.off()
+         #   self.ev3.light.on(Color.RED)
+         #   self.ev3.screen.draw_text(0,40,"STARTUP ERROR")
+         #   self.ev3.screen.draw_text(0,80,"CHECK PORT 4")
+         #   self.ev3.speaker.beep(frequency=2000, duration=1000)
+         #   wait(4000)
+         #   self.ev3.screen.clear()
+         #   sys.exit()
         try:
             self.robot = DriveBase(self.left_drive_motor, self.right_drive_motor, wheel_diameter=56.9, axle_track=89)
             self.robot.settings(straight_speed=600, straight_acceleration=500, turn_rate=200, turn_acceleration=123)

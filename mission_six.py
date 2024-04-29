@@ -26,3 +26,4 @@ def mission_six(r):
     r.ev3.screen.draw_text(30, 60, "Mission 6")
     wait(100)
     # Add your code below:
+   
