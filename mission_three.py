@@ -25,4 +25,15 @@ def mission_three(r):
     print("Running Mission 3")
     r.ev3.screen.draw_text(30, 60, "Mission 3")
     wait(100)
-    # 
+    # The Best Mission! Aka, Emma's Mission! SLAY GIRLYPOP*instert MII theme*
+    r.robot.straight(1500)
+    r.robot.turn(-75)
+    r.robot.straight(300)
+    r.robot.turn(105)
+    r.left_attachment_motor.run_angle(200, 180)
+    r.robot.straight(-200)
+    r.left_attachment_motor.run_angle(200, -180)
+    r.robot.turn(90)
+    r.robot.straight(100)
+    r.robot.turn(90)
+    r.robot.straight(-1500)

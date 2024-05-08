@@ -20,6 +20,8 @@ from pybricks.tools import wait
 from pybricks.hubs import EV3Brick
 from bolton_robotics_robot import bolton_robotics_robot
 
+#hoi im fin ////////////////////
+
 def mission_four(r):
     r.ev3.screen.clear()
     print("Running Mission 4")
